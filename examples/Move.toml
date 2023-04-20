@@ -1,0 +1,10 @@
+[package]
+name = "examples"
+version = "0.0.1"
+published-at = "0x8c447b9eb26fe9f9e8e1546ea719b16f7e7079d575cb12f6de22ec91f0c2afd2"
+
+[dependencies]
+nft = {local = "../../abyss"}
+
+[addresses]
+examples =  "0x8c447b9eb26fe9f9e8e1546ea719b16f7e7079d575cb12f6de22ec91f0c2afd2"
