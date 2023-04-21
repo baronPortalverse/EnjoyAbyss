@@ -5,7 +5,7 @@ version = "0.0.1"
 published-at = "0x091b672e0906a8ccdc1a2153fc85d4398378757b3096423d33e2aee7354c4153"
 
 [dependencies]
-NftProtocol = {git = "git@github.com:ENJOY-LAB/nft-protocol.git", rev = "testnet"}
+NftProtocol = {git = "https://github.com/ENJOY-LAB/nft-protocol.git", rev = "testnet"}
 
 [addresses]
 nft =  "0x091b672e0906a8ccdc1a2153fc85d4398378757b3096423d33e2aee7354c4153"
