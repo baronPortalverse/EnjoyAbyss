@@ -38,7 +38,7 @@ dependencies = [
 
 [[move.package]]
 name = "nft"
-source = { local = "../../abyss" }
+source = { git = "git@github.com:ENJOY-LAB/AbyssWorld.git", rev = "main", subdir = "" }
 
 dependencies = [
   { name = "NftProtocol" },
