@@ -7,4 +7,4 @@ published-at = "0x9c860f5abd7ded00b69723b71a58775c1b6de10025e48654546c34cefce91c
 nft = {git = "git@github.com:ENJOY-LAB/AbyssWorld.git", rev="main"}
 
 [addresses]
-examples =  "0x0"
+examples =  "0x9c860f5abd7ded00b69723b71a58775c1b6de10025e48654546c34cefce91c69"
