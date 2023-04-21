@@ -1,12 +1,13 @@
 [package]
 name = "nft"
 version = "0.0.1"
-published-at = "0xf60cfb42dc80b0e17e25177a3e86bfa122e34e57bba7eb610afb88a6919d072f"
+
+published-at = "0x091b672e0906a8ccdc1a2153fc85d4398378757b3096423d33e2aee7354c4153"
 
 [dependencies]
 NftProtocol = {git = "git@github.com:ENJOY-LAB/nft-protocol.git", rev = "testnet"}
 
 [addresses]
-nft =  "0xf60cfb42dc80b0e17e25177a3e86bfa122e34e57bba7eb610afb88a6919d072f"
+nft =  "0x091b672e0906a8ccdc1a2153fc85d4398378757b3096423d33e2aee7354c4153"
 sui =  "0000000000000000000000000000000000000000000000000000000000000002"
 admin = "0x8db963c4d441298dd16265591c8201af553dae2c3b25fe9eb370c38447fd13ca"
