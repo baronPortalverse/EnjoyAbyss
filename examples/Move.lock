@@ -4,6 +4,7 @@
 version = 0
 
 dependencies = [
+  { name = "mock-type" },
   { name = "nft" },
 ]
 
@@ -37,8 +38,16 @@ dependencies = [
 ]
 
 [[move.package]]
+name = "mock-type"
+source = { local = "../mock-type" }
+
+dependencies = [
+  { name = "Sui" },
+]
+
+[[move.package]]
 name = "nft"
-source = { local = "../../abyss" }
+source = { git = "https://github.com/ENJOY-LAB/AbyssWorld.git", rev = "main", subdir = "" }
 
 dependencies = [
   { name = "NftProtocol" },
