@@ -13,7 +13,7 @@ source = { git = "https://github.com/MystenLabs/sui.git", rev = "cab7e9762d4d751
 
 [[move.package]]
 name = "NftProtocol"
-source = { git = "git@github.com:Origin-Byte/nft-protocol.git", rev = "testnet", subdir = "" }
+source = { git = "git@github.com:ENJOY-LAB/nft-protocol.git", rev = "testnet", subdir = "" }
 
 dependencies = [
   { name = "Originmate" },
