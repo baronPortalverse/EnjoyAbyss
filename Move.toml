@@ -4,7 +4,7 @@ version = "0.0.1"
 published-at = "0xf60cfb42dc80b0e17e25177a3e86bfa122e34e57bba7eb610afb88a6919d072f"
 
 [dependencies]
-NftProtocol = {git = "git@github.com:Origin-Byte/nft-protocol.git", rev = "main"}
+NftProtocol = {git = "git@github.com:Origin-Byte/nft-protocol.git", rev = "testnet"}
 
 [addresses]
 nft =  "0xf60cfb42dc80b0e17e25177a3e86bfa122e34e57bba7eb610afb88a6919d072f"
