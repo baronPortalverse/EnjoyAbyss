@@ -11,7 +11,7 @@ module examples::collection {
     use nft_protocol::collection;
     use nft::souffl3::{Self, NFT, SharedPublisher};
 
-    struct Gekacha has key, store {
+    struct Abyss has key, store {
         id: UID,
         name: String,
         image_url: String,
@@ -22,14 +22,14 @@ module examples::collection {
     struct COLLECTION has drop {}
 
     fun init(witness: COLLECTION, ctx: &mut TxContext) {
-        let (abyss_collection, mint_cap_abyss) = collection::create_with_mint_cap<COLLECTION, Gekacha>(&witness, option::none(), ctx);
+        let (abyss_collection, mint_cap_abyss) = collection::create_with_mint_cap<COLLECTION, Abyss>(&witness, option::none(), ctx);
         transfer::public_transfer(mint_cap_abyss, tx_context::sender(ctx));
         transfer::public_share_object(abyss_collection);
     }
 
     public entry fun create_collection_display_entry(
         publisher: &SharedPublisher,
-        cap: &MintCap<Gekacha>,
+        cap: &MintCap<Abyss>,
         ctx: &mut TxContext
     ) {
         let display_gekacha = create_collection_display(publisher, cap, ctx);
@@ -39,10 +39,10 @@ module examples::collection {
 
     public fun create_collection_display(
         publisher: &SharedPublisher,
-        cap: &MintCap<Gekacha>,
+        cap: &MintCap<Abyss>,
         ctx: &mut TxContext
-    ): Display<NFT<Gekacha>> {
-        let display_abyss = souffl3::create_display<Gekacha>(cap, publisher, ctx);
+    ): Display<NFT<Abyss>> {
+        let display_abyss = souffl3::create_display<Abyss>(cap, publisher, ctx);
         display_abyss
     }
 }
