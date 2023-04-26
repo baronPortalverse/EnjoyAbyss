@@ -18,31 +18,5 @@ module aby::collection {
         properties: VecMap<String, String>
     }
 
-    /// One time witness is only instantiated in the init method
-    struct COLLECTION has drop {}
 
-    fun init(witness: COLLECTION, ctx: &mut TxContext) {
-        let (abyss_collection, mint_cap_abyss) = collection::create_with_mint_cap<COLLECTION, Abyss>(&witness, option::none(), ctx);
-        transfer::public_transfer(mint_cap_abyss, tx_context::sender(ctx));
-        transfer::public_share_object(abyss_collection);
-    }
-
-    public entry fun create_collection_display_entry(
-        publisher: &SharedPublisher,
-        cap: &MintCap<Abyss>,
-        ctx: &mut TxContext
-    ) {
-        let display_gekacha = create_collection_display(publisher, cap, ctx);
-        let sender = tx_context::sender(ctx);
-        transfer::public_transfer(display_gekacha, sender);
-    }
-
-    public fun create_collection_display(
-        publisher: &SharedPublisher,
-        cap: &MintCap<Abyss>,
-        ctx: &mut TxContext
-    ): Display<NFT<Abyss>> {
-        let display_abyss = souffl3::create_display<Abyss>(cap, publisher, ctx);
-        display_abyss
-    }
 }
