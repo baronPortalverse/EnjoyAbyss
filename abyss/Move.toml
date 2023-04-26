@@ -1,0 +1,10 @@
+[package]
+name = "aby"
+version = "0.0.1"
+published-at = "0x0006b633ac42370c079a572e76349136372085dfc852fed9517fd7f605219de8"
+
+[dependencies]
+nft = {git = "https://github.com/baronPortalverse/EnjoyAbyss.git", rev="main"}
+
+[addresses]
+aby =  "0x0006b633ac42370c079a572e76349136372085dfc852fed9517fd7f605219de8"
